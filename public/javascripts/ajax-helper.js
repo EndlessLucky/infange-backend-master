@@ -1,0 +1,13 @@
+
+const DEBUG = true;
+const HOST = 'http://localhost';
+const AUTH = ':9000';
+const TOKEN = {};
+
+TOKEN.REFRESH = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjUyNzUzMDQsImRhdGEiOiJwZlRzRnFjSVBOV21zRWQyeExsRkxVRzZKT0o1c21tSXVQUGhOcnpDdVYyakRyY0pvQTlPYmluZ1VHazZnZkoxYmsza09iUnF6Vk56VVhOTzRiejBXVzNrbmJtY2tYZmVMa25EaTBMVHhMREQzVEtaMkFuYlFzMm85M2JDak5RUE5lbHdybGZKQXJ2aGVjY1BqSExqVDVDQWt2MElid3dLT0VsWTBUeHlkNjRreUc5VFZ2UVF5eDlaQmRxNGx4NjZjeGxFRVM5Y0prYnZMT3hCREN0cWpRR1BFWTd0R1B3YmY0cVdudDkxakRCOTZuMER2TmFTeU1ENTRFZnNpMlNQIiwic3ViIjoiNWFkZjkxMjc0ZDc3N2Q2ODcwMGIwY2ExIiwiaWF0IjoxNTI1Mjc0NDA0fQ.oZnICb77SJ8K1y8D6NXAVgL1IGjaCK7yAS_X6exc-6I';
+
+const helper = function() {
+    function getAuthToken() {
+
+    }
+}();

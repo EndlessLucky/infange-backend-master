@@ -1,0 +1,44 @@
+{
+  "name": "locihq",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "startDev": "nodemon ./bin/www",
+    "migrate_down": "./node_modules/.bin/migrate-mongo down --file ./migration/migrate-mongo-config.js",
+    "migrate_up": "./node_modules/.bin/migrate-mongo up --file ./migration/migrate-mongo-config.js",
+    "migrate_status": "./node_modules/.bin/migrate-mongo status --file ./migration/migrate-mongo-config.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "cookie": "^0.4.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "*",
+    "dotenv": "^8.2.0",
+    "express": "*",
+    "gridfs-stream": "^1.1.1",
+    "http-errors": "*",
+    "jsonwebtoken": "^8.5.1",
+    "migrate-mongo": "^7.1.0",
+    "moment": "^2.24.0",
+    "momentjs": "^2.0.0",
+    "mongodb": "^3.5.3",
+    "mongoose": "^5.8.11",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "node-cron": "^2.0.3",
+    "node-schedule": "^1.3.2",
+    "nodejs-nodemailer-outlook": "^1.2.1",
+    "nodemailer": "^6.4.2",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "pug": "*",
+    "rand-token": "^0.4.0",
+    "serve-favicon": "*",
+    "sharp": "^0.24.1",
+    "socket.io": "^2.3.0",
+    "web-push": "^3.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
