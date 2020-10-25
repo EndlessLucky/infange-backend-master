@@ -3,10 +3,10 @@
 const config = {
   mongodb: {
     // TODO Change (or review) the url to your MongoDB:
-    url: "mongodb://localhost:27017",
+    url: "mongodb://admin:SnY4h3ZtHDyXuBy9@NPA35",
 
     // TODO Change this to your database name:
-    databaseName: "infrange",
+    databaseName: "loci",
 
     options: {
       useNewUrlParser: true, // removes a deprecation warning when connecting
