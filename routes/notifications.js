@@ -35,6 +35,20 @@ router.patch("/:notificationId/read", async (req, res) => {
 });
 
 router.delete("/:notificationId", async (req, res) => {
+  let notification = await Notification.find({
+    _id: req.params.notificationId,
+  })
+  console.log(notification[0]);
+  Notification.trigger(
+    "notification_deleted",
+    {
+      title: notification[0].payload.title,
+      message: "You deleted the notification",
+      id: notification[0].payload.id,
+    },
+    notification[0].recipientId
+  );
+
   await Notification.updateOne(
     {
       _id: req.params.notificationId,
